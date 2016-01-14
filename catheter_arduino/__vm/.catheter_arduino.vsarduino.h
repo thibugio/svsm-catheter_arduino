@@ -10,6 +10,7 @@
 
 #ifndef _VSARDUINO_H_
 #define _VSARDUINO_H_
+#define _VMDEBUG 1
 #define printf iprintf
 #define F_CPU 84000000L
 #define ARDUINO 10607
@@ -103,6 +104,8 @@ extern "C" void __cxa_pure_virtual() {;}
 #define portInputRegister(P)
 #define portModeRegister(P)
 #include <..\catheter_arduino\catheter_arduino.ino>
+#include <..\catheter_arduino\arduino_defs.h>
+#include <..\catheter_arduino\common_defs.h>
 #include <..\catheter_arduino\common_utils.cpp>
 #include <..\catheter_arduino\common_utils.h>
 #include <..\catheter_arduino\serial_utils.cpp>

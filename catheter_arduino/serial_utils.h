@@ -1,13 +1,6 @@
-// serial_utils.h
-
-#ifndef _SERIAL_UTILS_h
-#define _SERIAL_UTILS_h
-
-#if defined(ARDUINO) && ARDUINO >= 100
-	#include "arduino.h"
-#else
-	#include "WProgram.h"
-#endif
+#pragma once
+#ifndef _SERIAL_UTILS_H
+#define _SERIAL_UTILS_H
 
 void serial_init();
 

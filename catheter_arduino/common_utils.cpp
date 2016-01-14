@@ -1,7 +1,13 @@
-// 
-// 
-// 
+#if defined(ARDUINO) && ARDUINO >= 100
+#include "arduino.h"
+#else
+#include "WProgram.h"
+#endif
 
+#include <stdint.h>
+#include <stdlib.h>
+
+#include "common_defs.h"
 #include "common_utils.h"
 
 

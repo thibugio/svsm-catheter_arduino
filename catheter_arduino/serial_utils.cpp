@@ -1,6 +1,8 @@
-// 
-// 
-// 
+#if defined(ARDUINO) && ARDUINO >= 100
+#include "arduino.h"
+#else
+#include "WProgram.h"
+#endif
 
 #include "serial_utils.h"
 
@@ -62,5 +64,3 @@ uint8_t read_byte(void) {
 	return (uint8_t)(Serial.read());
 #endif  
 }
-
-

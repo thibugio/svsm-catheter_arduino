@@ -1,15 +1,6 @@
-// spi_utils.h
-
-#ifndef _SPI_UTILS_h
-#define _SPI_UTILS_h
-
-#if defined(ARDUINO) && ARDUINO >= 100
-	#include "arduino.h"
-#else
-	#include "WProgram.h"
-#endif
-
-# include <SPI.h>
+#pragma once
+#ifndef _SPI_UTILS_H
+#define _SPI_UTILS_H
 
 /* *************** */
 /* SPI definitions */
@@ -34,4 +25,3 @@ uint16_t ADC_read(int channel);
 void DAC_write(int channel, uint16_t to_dac);
 
 #endif
-
